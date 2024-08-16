@@ -1,6 +1,6 @@
+import { ScrollView } from "react-native";
 import Markdown from "react-native-markdown-display";
 import { styles } from "./styles";
-import { ScrollView, View } from "react-native";
 
 interface Props {
   content: string;
