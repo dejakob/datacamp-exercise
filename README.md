@@ -1,4 +1,25 @@
-# Datacamp
+# Datacamp exercise markdown app
+
+## Set Up
+
+To run the project, simply
+1. Install the dependencies:
+
+```bash
+yarn
+```
+
+2. Run the start script
+
+```bash
+
+yarn start
+```
+
+As this is an expo project, you can test out the application in browser without any extra steps
+
+To start the app in ios, press [i]
+To start the app in android, press [a]
 
 ## Motivation
 
