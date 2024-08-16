@@ -21,6 +21,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     borderWidth: 1,
     borderColor: "rgb(137, 137, 137)",
-    backgroundColor: "rgb(245, 245, 245)",
+    backgroundColor: "#fff",
   },
 });

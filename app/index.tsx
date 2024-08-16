@@ -1,10 +1,10 @@
-import { SplitScreen, TextArea } from "@/components";
-import { Button, KeyboardAvoidingView, Text, View } from "react-native";
+import { Button, SplitScreen, TextArea } from "@/components";
+import { KeyboardAvoidingView, Text, View } from "react-native";
 
 export default function LandingScreen() {
   return (
     <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
-      <SplitScreen footer={<Button title="Hello"></Button>}>
+      <SplitScreen footer={<Button onPress={() => {}}>Render</Button>}>
         <TextArea />
         <View>
           <Text>B</Text>
