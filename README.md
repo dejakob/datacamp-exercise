@@ -1,5 +1,7 @@
 # Datacamp exercise markdown app
 
+Snack URL: https://snack.expo.dev/@dejakob3/datacamp-markdown-exercise
+
 ## Set Up
 
 To run the project, simply
