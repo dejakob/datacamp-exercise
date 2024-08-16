@@ -8,7 +8,7 @@ interface Props {
 
 export const Button = ({ children, onPress }: Props) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.button}>
+    <TouchableOpacity onPress={onPress} style={styles.button} role="button" testID="button">
       <Text style={styles.button_text}>{children}</Text>
     </TouchableOpacity>
   );

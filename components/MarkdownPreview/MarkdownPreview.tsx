@@ -8,7 +8,7 @@ interface Props {
 
 export const MarkdownPreview = ({ content }: Props) => {
   return (
-    <ScrollView style={styles.markdownPreview}>
+    <ScrollView style={styles.markdownPreview} testID="markdownPreview">
       <Markdown>{content}</Markdown>
     </ScrollView>
   );
