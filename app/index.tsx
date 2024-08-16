@@ -1,14 +1,15 @@
-import { Button, SplitScreen, TextArea } from "@/components";
-import { KeyboardAvoidingView, Text, View } from "react-native";
+import { Button, MarkdownPreview, SplitScreen, TextArea } from "@/components";
+import { useState } from "react";
+import { KeyboardAvoidingView } from "react-native";
 
 export default function LandingScreen() {
+    const [rawMarkdown, setRawMarkdown] = useState('');
+
   return (
     <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
       <SplitScreen footer={<Button onPress={() => {}}>Render</Button>}>
-        <TextArea />
-        <View>
-          <Text>B</Text>
-        </View>
+        <TextArea value={rawMarkdown} onChangeText={setRawMarkdown} />
+        <MarkdownPreview content={rawMarkdown} />
       </SplitScreen>
     </KeyboardAvoidingView>
   );

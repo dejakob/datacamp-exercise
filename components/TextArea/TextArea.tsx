@@ -1,6 +1,7 @@
 import { TextInput } from "react-native";
 import { styles } from "./styles";
+import { ComponentProps } from "react";
 
-export const TextArea = () => {
-  return <TextInput multiline style={styles.textArea} />;
+export const TextArea = (props: ComponentProps<typeof TextInput>) => {
+  return <TextInput {...props} multiline style={styles.textArea} />;
 };
