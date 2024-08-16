@@ -1,6 +1,7 @@
 import { ReactNode, Children } from "react";
 import { View, useWindowDimensions } from "react-native";
 import { styles } from "./styles";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 interface Props {
   children: ReactNode;
@@ -10,7 +11,7 @@ export const SplitScreen = ({ children }: Props) => {
   const { width, height } = useWindowDimensions();
 
   return (
-    <View
+    <SafeAreaView
       style={[
         styles.splitScreen,
         width > height ? styles.splitScreen__row : styles.splitScreen__column,
@@ -21,6 +22,6 @@ export const SplitScreen = ({ children }: Props) => {
           {child}
         </View>
       ))}
-    </View>
+    </SafeAreaView>
   );
 };
