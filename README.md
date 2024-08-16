@@ -3,6 +3,7 @@
 ## Set Up
 
 To run the project, simply
+
 1. Install the dependencies:
 
 ```bash
@@ -21,11 +22,28 @@ As this is an expo project, you can test out the application in browser without 
 To start the app in ios, press [i]
 To start the app in android, press [a]
 
+### Tests
+
+To run the automated tests, simply run this command:
+
+```bash
+yarn test
+```
+
+### Linting
+
+To run linting, simply run this command:
+
+```bash
+yarn lint
+```
+
 ## Motivation
 
 ### Expo
 
 I decided to set up an Expo project with the following motivation:
+
 - One of the requirements of the project was to deploy to Snack, which is owned by Expo
 - The latest React Native docs recommend setting up with Expo: https://reactnative.dev/docs/environment-setup
 
