@@ -1,4 +1,4 @@
-import LandingScreen from "./index";
+import LandingScreen from "../index";
 import {
   render,
   screen,
